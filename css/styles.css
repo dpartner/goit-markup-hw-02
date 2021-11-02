@@ -1,6 +1,7 @@
 :root {
   --brand-color: #2196f3;
   --text-color: #757575;
+  --alternative-text-color: #ffffff;
   --heading-color: #212121;
   --primary-background: #2f303a;
   --secondary-background: #f5f4fa;
@@ -77,7 +78,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--alternative-text-color);
 }
 .hero-button {
   font-family: Roboto, sans-serif;
@@ -88,7 +89,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--alternative-text-color);
   background: var(--brand-color);
   cursor: pointer;
 }
@@ -152,14 +153,14 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--alternative-text-color);
   text-decoration: none;
 }
 
 .address {
   font-style: normal;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--alternative-text-color);
 }
 
 .footer-contacts {
@@ -172,15 +173,29 @@ body {
   text-decoration: none;
 }
 
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
+  color: var(--brand-color);
+}
+
 /* -----Porfolio Page----- */
 
 .filter-button {
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--heading-color);
+  background-color: var(--secondary-background);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--alternative-text-color);
+  background: var(--brand-color);
+  cursor: pointer;
 }
 
 .filter-list,
