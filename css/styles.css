@@ -171,3 +171,34 @@ body {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+
+/* -----Porfolio Page----- */
+
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--heading-color);
+}
+
+.filter-list,
+.gallery-list {
+  list-style: none;
+}
+
+.gallery-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--heading-color);
+}
+
+.gallery-description {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
